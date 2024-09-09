@@ -1,9 +1,6 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.10"
-  },
-  "scripts": {  
-    "scsstocss" : "node-sass scss/main.scss css/style.css -w"
-
-  },
+  }
+  
 }
