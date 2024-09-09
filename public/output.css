@@ -701,6 +701,10 @@ video {
   margin-top: auto;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -799,6 +803,10 @@ video {
 
 .max-w-\[7\.313rem\] {
   max-width: 7.313rem;
+}
+
+.max-w-\[45\.125rem\] {
+  max-width: 45.125rem;
 }
 
 .flex-1 {
@@ -1011,6 +1019,26 @@ video {
   padding-bottom: .875rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-\[1\] {
+  padding-top: 1;
+  padding-bottom: 1;
+}
+
+.py-\[1\.219rem\] {
+  padding-top: 1.219rem;
+  padding-bottom: 1.219rem;
+}
+
 .pb-9 {
   padding-bottom: 2.25rem;
 }
@@ -1033,6 +1061,10 @@ video {
 
 .pt-\[68\%\] {
   padding-top: 68%;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {

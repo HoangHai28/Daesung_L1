@@ -38,6 +38,9 @@ html,
 body {
     font-size: 16px;
 }
+body {
+    font-family: 'Montserrat', sans-serif !important;
+  }
 .container {
     padding-left: 0.938rem;
     padding-right: 0.938rem;
@@ -251,7 +254,7 @@ input {
         display: inline-block;
     }
     .menu > ul > li > a {
-        padding: .625rem;
+        padding: 1.25rem;
         display:block;
         &:hover, &.active {
             background: #fff;
