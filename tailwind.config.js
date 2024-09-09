@@ -11,7 +11,7 @@ module.exports = {
         "2xl": "1440px",
       },
       fontFamily: {
-        'Monterserrat': ['"Monterserrat"'],
+        'Montserrat': ['"Montserrat"'],
       },
       colors: {
         'cl-black': 'var(--cl-black)',
