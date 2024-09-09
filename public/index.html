@@ -52,7 +52,7 @@
             <div class="avarta w-10 h-10 rounded-full img_full img-h-full img-cover">
               <img src="./theme/frontend/img/avatar.jpg" alt="">
             </div>
-            <ul class="user-list_content min-w-[12.375rem] group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100 opacity-0 invisible pointer-events-none transition-all duration-300 absolute right-0 top-[100%] bg-[#454545] p-2 whitespace-nowrap">
+            <ul class="user-list_content min-w-[12.375rem] group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100 opacity-0 invisible pointer-events-none transition-all duration-300 absolute z-10 right-0 top-[100%] bg-[#454545] p-2 whitespace-nowrap">
               <li><a href="#" title="Thông tin tài khoản" class="block py-3 px-2 text-white hover:bg-[#656565] hover:text-white text-xs">Thông tin tài khoản</a></li>
               <li><a href="#" title="Về Daesung" class="block py-3 px-2 text-white hover:bg-[#656565] hover:text-white text-xs">VỀ DAESUNG</a></li>
               <li><a href="#" title="Tra cứu đơn hàng" class="block py-3 px-2 text-white hover:bg-[#656565] hover:text-white text-xs">Tra cứu đơn hàng</a></li>
@@ -326,8 +326,11 @@
   </section>
   <footer class="footer xl:pt-[4.5rem] pt-8 bg-[#E8E8E8]">
     <div class="container">
+      <a href="#" title="" class="logo-footer lg:hidden block max-w-[7.313rem] mb-8 mx-auto">
+        <img src="./theme/frontend/img/LOGO-footer.png" alt="">
+      </a>
       <div class="flex flex-wrap -mx-2">
-        <div class="lg:w-[22%] px-2 mb-4">
+        <div class="w-full lg:w-[22%] sm:w-1/2 px-2 mb-4">
           <p class="title-footer font-semibold uppercase text-[#454545] mb-8">
             Chăm sóc khách hàng
           </p>
@@ -340,7 +343,7 @@
             </ul>
           </div>
         </div>
-        <div class="lg:w-1/4 px-2 mb-4">
+        <div class="w-full lg:w-1/4 sm:w-1/2 px-2 mb-4">
           <p class="title-footer font-semibold uppercase text-[#454545] mb-8">
             Chính sách
           </p>
@@ -353,7 +356,7 @@
             </ul>
           </div>
         </div>
-        <div class="lg:w-[28%] px-2 mb-4">
+        <div class="w-full lg:w-[28%] sm:w-1/2 px-2 mb-4">
           <p class="title-footer font-semibold uppercase text-[#454545] mb-8">
             THỜI GIAN HOẠT ĐỘNG
           </p>
@@ -364,7 +367,7 @@
             </ul>
           </div>
         </div>
-        <div class="lg:w-1/4 px-2 mb-4">
+        <div class="w-full lg:w-1/4 sm:w-1/2 px-2 mb-4">
           <p class="title-footer font-semibold uppercase text-[#454545] mb-8">
             ĐỊA CHỈ CÔNG TY
           </p>
@@ -375,11 +378,62 @@
           </div>
         </div>
       </div>
-      <a href="#" title="" class="logo-footer block max-w-[7.313rem] lg:ml-10">
+      <a href="#" title="" class="logo-footer hidden lg:block max-w-[7.313rem] lg:ml-10">
         <img src="./theme/frontend/img/LOGO-footer.png" alt="">
       </a>
-      <div class="flex flex-wrap items-center justify-between">
-        <ul class="list-payment_method"></ul>31:20
+      <div class="lg:flex flex-wrap items-center justify-between py-3">
+        <ul class="list-payment_method mb-2 ">
+          <li class="w-[1.875rem] h-5 img_full img-contain img-h-full inline-block mr-4 last:mr-0">
+            <img src="./theme/frontend/img/thanhtoan.png" alt="">
+          </li>
+          <li class="w-[1.875rem] h-5 img_full img-contain img-h-full inline-block mr-4 last:mr-0">
+            <img src="./theme/frontend/img/momo.png" alt="">
+          </li>
+          <li class="w-[1.875rem] h-5 img_full img-contain img-h-full inline-block mr-4 last:mr-0">
+            <img src="./theme/frontend/img/visa.png" alt="">
+          </li>
+          <li class="w-[1.875rem] h-5 img_full img-contain img-h-full inline-block mr-4 last:mr-0">
+            <img src="./theme/frontend/img/thanhtoan.png" alt="">
+          </li>
+        </ul>
+        <div class="footer-right">
+          <div class="sm:flex items-center justify-between"> 
+            <p class="hotline font-bold 2xl:text-[1.5rem] text:[1.125rem] mb-2 sm:mb-0">
+              <span class="2xl:text-[1rem] text-[#6D758F]">Hotline : </span>
+              <a href="tel:0372656666" title="hotline" class="link text-cl-red">037 265 6666</a>
+            </p>
+            <ul class="list-channel text-center lg:text-left">
+              <li class="mr-2 last:mr-0 inline-block">
+                <a href="#" title="" target="_blank" class="inline-block w-9 h-9 img_full img-h-full img-contain rounded-full overflow-hidden">
+                  <img src="./theme/frontend/img/lazada.png" alt="">
+                </a>
+              </li>
+              <li class="mr-2 last:mr-0 inline-block">
+                <a href="#" title="" target="_blank" class="inline-block w-9 h-9 img_full img-h-full img-contain rounded-full overflow-hidden">
+                  <img src="./theme/frontend/img/tk.png" alt="">
+                </a>
+              </li>
+              <li class="mr-2 last:mr-0 inline-block">
+                <a href="#" title="" target="_blank" class="inline-block w-9 h-9 img_full img-h-full img-contain rounded-full overflow-hidden">
+                  <img src="./theme/frontend/img/facebook.png" alt="">
+                </a>
+              </li>
+              <li class="mr-2 last:mr-0 inline-block">
+                <a href="#" title="" target="_blank" class="inline-block w-9 h-9 img_full img-h-full img-contain rounded-full overflow-hidden">
+                  <img src="./theme/frontend/img/lazada.png" alt="">
+                </a>
+              </li>
+              <li class="mr-2 last:mr-0 inline-block">
+                <a href="#" title="" target="_blank" class="inline-block w-9 h-9 img_full img-h-full img-contain rounded-full overflow-hidden">
+                  <img src="./theme/frontend/img/shoppee.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="text mt-3 text-center lg:text-left text-[.875rem] text-[#2B2A2D]">
+            Giấy phép kinh doanh: 0106662412 , do sở KH & ĐT TP. Hà Nội cấp ngày 10/10/2014
+          </p>
+        </div>
       </div>
 
     </div>

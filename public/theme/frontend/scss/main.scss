@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: linear-gradient(98.49deg, #DFB557 -39.81%, #FDF7BF 33.9%, #D6AB48 94.09%, #AE832D);
+    background: var(--cl-red);
 }
 
 html,
@@ -271,6 +271,12 @@ input {
 @media (min-width:1440px) {
     .container {
         max-width: 1240px;
+    }
+}
+
+@media (max-width:1439px) {
+    html,body {
+        font-size: 14px;
     }
 }
 
