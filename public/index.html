@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./theme/frontend/scss/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  
+
+</head>
+<body class="wrapper mx-auto text-cl-black leading-snug font-['Montserrat', sans- serif]">
+  <header class="header">
+    <div class="header-top bg-white lg:py-5 py-2">
+      <div class="container flex justify-between items-center">
+        <div class="flex items-center">
+          <span class="lg:hidden block show-menu-mobile mr-4">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <a href="#" title="Trang chủ" class="h-logo block max-w-[4.375rem] lg:mr-8">
+            <img src="./theme/frontend/img/LOGO.png" alt="">
+          </a>
+          <form action="" class="form-search lg:flex items-center hidden border border-[#EEF0F3] bg-cl-primary-50 py-[.625rem] px-[.875rem] rounded-[.625rem]">
+            <button class="btn-search mr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-gray-500 hover:text-black">
+                <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" />
+              </svg> 
+            </button>
+            <input type="text" name="" id="" placeholder="Search" class="form-control bg-transparent min-w-[15rem] "> 
+          </form>
+        </div>
+        <div class="flex head-action items-center">
+          <a href="#" class=" lg:block hidde link mr-4 last:mr-0 font-semibold">Liên hệ</a>
+          <div class="h-lang mr-4 last:mr-0 relative py-2 cursor-pointer group">
+            <div class="lang p-[.625rem] rounded-md bg-cl-red text-white font-medium uppercase text-sm">
+              EN <i class="fa-solid fa-angle-down ml-2"></i>
+            </div>
+            <ul class="lang-content invisible pointer-events-none group-hover:pointer-events-auto group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 absolute left-0 top-[100%] w-full z-[1] bg-[#454545]">
+              <li><a href="#" title="EN" class="block text-center p-2 text-xs text-white hover:bg-[#656565] hover:text-white">EN</a></li>
+              <li><a href="#" title="VN" class="block text-center p-2 text-xs text-white hover:bg-[#656565] hover:text-white">VN</a></li>
+            </ul>
+          </div>
+          <a href="#" title="Giỏ hàng" class="h-cart p-[.625rem] rounded-md bg-bkg-subtle mr-4 last:mr-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+              <path fill-rule="evenodd" d="M6 5v1H4.667a1.75 1.75 0 0 0-1.743 1.598l-.826 9.5A1.75 1.75 0 0 0 3.84 19H16.16a1.75 1.75 0 0 0 1.743-1.902l-.826-9.5A1.75 1.75 0 0 0 15.333 6H14V5a4 4 0 0 0-8 0Zm4-2.5A2.5 2.5 0 0 0 7.5 5v1h5V5A2.5 2.5 0 0 0 10 2.5ZM7.5 10a2.5 2.5 0 0 0 5 0V8.75a.75.75 0 0 1 1.5 0V10a4 4 0 0 1-8 0V8.75a.75.75 0 0 1 1.5 0V10Z" clip-rule="evenodd" />
+            </svg>           
+          </a>
+          <div class=" relative h-user mr-4 last:mr-0 group py-2">
+            <div class="avarta w-10 h-10 rounded-full img_full img-h-full img-cover">
+              <img src="./theme/frontend/img/avatar.jpg" alt="">
+            </div>
+            <ul class="user-list_content min-w-[12.375rem] group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100 opacity-0 invisible pointer-events-none transition-all duration-300 absolute right-0 top-[100%] bg-[#454545] p-2 whitespace-nowrap">
+              <li><a href="#" title="Thông tin tài khoản" class="block py-3 px-2 text-white hover:bg-[#656565] hover:text-white text-xs">Thông tin tài khoản</a></li>
+              <li><a href="#" title="Về Daesung" class="block py-3 px-2 text-white hover:bg-[#656565] hover:text-white text-xs">VỀ DAESUNG</a></li>
+              <li><a href="#" title="Tra cứu đơn hàng" class="block py-3 px-2 text-white hover:bg-[#656565] hover:text-white text-xs">Tra cứu đơn hàng</a></li>
+              <li><a href="#" title="Chính sách bảo hành" class="block py-3 px-2 text-white hover:bg-[#656565] hover:text-white text-xs">Chính sách bảo hành</a></li>
+              <li><a href="#" title="Liên hệ hỗ trợ" class="block py-3 px-2 text-white hover:bg-[#656565] hover:text-white text-xs">Liên hệ hỗ trợ</a></li>
+              <li><a href="#" title="Đăng xuất" class="block py-3 px-2 text-white hover:bg-[#656565] hover:text-white text-xs">Đăng xuất<i class="fa-solid fa-arrow-right-from-bracket ml-2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="head-search-moblie py-2 lg:hidden block ">
+      <div class="container">
+        <form action="" class="form-search flex items-center border border-[#EEF0F3] bg-cl-primary-50 py-[.625rem] px-[.875rem] rounded-[.625rem]">
+          <button class="btn-search mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 text-gray-500 hover:text-black">
+              <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" />
+            </svg> 
+          </button>
+          <input type="text" name="" id="" placeholder="Search" class="form-control bg-transparent flex-1 "> 
+        </form>
+      </div>
+    </div>
+    <div class="header-nav bg-cl-red">
+      <div class="container">
+        <nav class="menu">
+          <a href="#" title="Trang chủ" class="logo-mobile block lg:hidden max-w-[4.375rem] mx-auto my-6">
+            <img src="./theme/frontend/img/LOGO.png" alt="">
+          </a>
+          <ul>
+            <li><a href="#" title="Trang chủ">TRANG CHỦ</a></li>
+            <li><a href="#" title="Kéo cắt vải">KÉO CẮT VẢI</a></li>
+            <li><a href="#" title="Kéo nhà bếp">KÉO NHÀ BẾP</a></li>
+            <li><a href="#" title="Kéo cắt cành">KÉO CẮT CÀNH</a></li>
+            <li><a href="#" title="Kéo cắt tóc">KÉO CẮT TÓC</a></li>
+            <li><a href="#" title="Tin tức">TIN TỨC</a></li>
+            <li><a href="#" title="Affiliate">AFFILATE</a></li>
+          </ul>
+        </nav>
+        <div class="over-lay block lg:hidden fixed top-0 right-[-100%] w-full h-full bg-[rgba(0, 0 ,0, .7)] transition-all duration-300"></div>
+      </div>
+    </div>
+  </header>
+  <section class="section-banner_index">
+    <div class="swiper slider-banner__index">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="img-banner img_full">
+            <img src="./theme/frontend/img/bannerr.png" alt="">
+          </div>
+          <div class="container py-4 lg:py-0 flex items-center lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 h-full">
+            <div class="banner-content max-w-[25rem]">
+              <h2 class="title font-bold text-cl-black lg:text-white uppercase text-[1.5rem] xl:text[1.85rem] 2xl:text-[3rem]">Kéo gia dụng </h2>
+              <div class="short-content text-cl-black lg:text-white text-sm uppercase font-semibold mb-[.875rem] tracking-[1.25px]">
+                Ý thức trách nhiệm nâng niu bàn tay Việt và trải nghiệm sống cho người Việt.  
+              </div>
+              <a href="#" title="Tìm hiểu thêm" class="btn-view-more py-[.875rem] px-6 inline-block rounded-lg bg-[#EB484E] text-white hover:bg-cl-red hover:text-white text-sm font-semibold">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide lg:visible invisible">
+          <div class="img-banner img_full">
+            <img src="./theme/frontend/img/bannerr.png" alt="">
+          </div>
+          <div class="container flex items-center absolute top-0 left-1/2 -translate-x-1/2 h-full">
+            <div class="banner-content max-w-[25rem]">
+              <h2 class="title font-bold text-white uppercase text-[1.5rem] xl:text[1.85rem] 2xl:text-[3rem]">Kéo gia dụng </h2>
+              <div class="short-content text-white text-sm uppercase font-semibold mb-[.875rem] tracking-[1.25px]">
+                Ý thức trách nhiệm nâng niu bàn tay Việt và trải nghiệm sống cho người Việt.  
+              </div>
+              <a href="#" title="Tìm hiểu thêm" class="btn-view-more py-[.875rem] px-6 inline-block rounded-lg bg-[#EB484E] text-white hover:bg-cl-red hover:text-white text-sm font-semibold">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class="section-whys xl:pt[3.75rem] xl:pb-20 py-8">
+    <div class="container">
+      <h2 class="title_all font-bold mb-[0.375rem] text-cl-black text-center 2xl:text-[2.5rem] xl:text-[1.875rem] text-[1.5rem]">
+        Tại sao chọn Daesung?
+      </h2>
+      <div class="short_content text-center mb-7 text-[.75rem] text-cl-black max-w-[44.125rem] mx-auto">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        consectetuer adipiscing elit, sed diam nonummy.Lorem ipsum dolor sit amet, consectetuer adipiscingsectetuer adipi.  
+      </div>
+      <div class="flex flex-wrap -mx-2">
+        <div class="lg:w-1/4 px-2 mb-4 w-1/2 ">
+          <div class="item-why">
+            <div class="image c-img pt-[68%]">
+              <img src="./theme/frontend/img/item.png" alt="">
+            </div>
+            <h3 class="text-center text text-[.875rem]">
+              Là doanh nghiệp sản xuất kéo
+              số 1 Việt Nam- Hàng Việt của 
+              người Việt. 
+            </h3>
+          </div>
+        </div>
+        <div class="lg:w-1/4 px-2 mb-4 w-1/2">
+          <div class="item-why">
+            <div class="image c-img pt-[68%]">
+              <img src="./theme/frontend/img/item-1.png" alt="">
+            </div>
+            <h3 class="text-center text text-[.875rem]">
+              Ý thức trách nhiệm nâng niu bàn tay Việt và trải nghiệm sống cho người Việt.  
+            </h3>
+          </div>
+        </div>
+        <div class="lg:w-1/4 px-2 mb-4 w-1/2 ">
+          <div class="item-why">
+            <div class="image c-img pt-[68%]">
+              <img src="./theme/frontend/img/item-1-2.png" alt="">
+            </div>
+            <h3 class="text-center text text-[.875rem]">
+              Thiết kế tiện lợi- dễ dàng sử dụngÝ thức trách nhiệm nâng niu bàntay Việt và trải nghiệm sống cho người Việt.  
+            </h3>
+          </div>
+        </div>
+        <div class="lg:w-1/4 px-2 mb-4 w-1/2">
+          <div class="item-why">
+            <div class="image c-img pt-[68%]">
+              <img src="./theme/frontend/img/item-1-1.png" alt="">
+            </div>
+            <h3 class="text-center text text-[.875rem]">
+              Bảo hành - dễ dàng tìm được địa chỉ bảo hành vì là hàng Việt Nam 
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-pro_hot bg-[#484848] pt-14 pb-9">
+    <div class="container ">
+      <h2 class="title_all font-bold mb-8 text-white text-center 2xl:text-[2.5rem] xl:text-[1.875rem] text-[1.5rem]">
+        Sản phẩm nổi bật
+      </h2>
+      <div class="flex flex-wrap -mx-2 2xl:-mx-9">
+        <div class="w-full sm:w-1/2 px-2 mb-4 lg:w-1/4 2xl:px-9 ">
+         <div class="item-pro flex flex-col h-full border border-[#CECECE] rounded-t-[5px] overflow-hidden">
+          <a href="#" class="img c-img bg-white pt-[116%] img-contain">
+            <img src="./theme/frontend/img/item-2.png" alt="">
+          </a>
+          <div class="pro-content p-4 text-center">
+            <h3>
+              <a href="#" class="title mb-4 font-bold text-white 2xl:text-[1.125rem] line-clamp-2">Kéo ngắn</a>
+            </h3>
+            <p class="price-old text-xs text-[#D1D1D1] line-through">200.000 VND</p>
+            <p class="price font-semibold text-white">100.000 VND</p>
+          </div>
+          <a href="#" title="Thêm vào giỏ hàng" class="btn-add-cart mt-auto hover:bg-cl-red hover:text-white py-[.375rem] px-[.625rem] flex items-center justify-center bg-[#D9001D] text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 mr-2">
+              <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+            </svg>            
+            Thêm vào giỏ hàng
+          </a>
+        </div> 
+        </div>
+        <div class="w-full sm:w-1/2 px-2 mb-4 lg:w-1/4 2xl:px-9 ">
+          <div class="item-pro flex flex-col h-full border border-[#CECECE] rounded-t-[5px] overflow-hidden">
+           <a href="#" class="img c-img bg-white pt-[116%] img-contain">
+             <img src="./theme/frontend/img/item-2.png" alt="">
+           </a>
+           <div class="pro-content p-4 text-center">
+             <h3>
+               <a href="#" class="title mb-4 font-bold text-white 2xl:text-[1.125rem] line-clamp-2">Kéo ngắn</a>
+             </h3>
+             <p class="price-old text-xs text-[#D1D1D1] line-through">200.000 VND</p>
+             <p class="price font-semibold text-white">100.000 VND</p>
+           </div>
+           <a href="#" title="Thêm vào giỏ hàng" class="btn-add-cart mt-auto hover:bg-cl-red hover:text-white py-[.375rem] px-[.625rem] flex items-center justify-center bg-[#D9001D] text-white">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 mr-2">
+               <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+             </svg>            
+             Thêm vào giỏ hàng
+           </a>
+         </div> 
+         </div>
+         <div class="w-full sm:w-1/2 px-2 mb-4 lg:w-1/4 2xl:px-9 ">
+          <div class="item-pro flex flex-col h-full border border-[#CECECE] rounded-t-[5px] overflow-hidden">
+           <a href="#" class="img c-img bg-white pt-[116%] img-contain">
+             <img src="./theme/frontend/img/item-2.png" alt="">
+           </a>
+           <div class="pro-content p-4 text-center">
+             <h3>
+               <a href="#" class="title mb-4 font-bold text-white 2xl:text-[1.125rem] line-clamp-2">Kéo ngắn</a>
+             </h3>
+             <p class="price-old text-xs text-[#D1D1D1] line-through">200.000 VND</p>
+             <p class="price font-semibold text-white">100.000 VND</p>
+           </div>
+           <a href="#" title="Thêm vào giỏ hàng" class="btn-add-cart mt-auto hover:bg-cl-red hover:text-white py-[.375rem] px-[.625rem] flex items-center justify-center bg-[#D9001D] text-white">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 mr-2">
+               <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+             </svg>            
+             Thêm vào giỏ hàng
+           </a>
+         </div> 
+         </div>
+         <div class="w-full sm:w-1/2 px-2 mb-4 lg:w-1/4 2xl:px-9 ">
+          <div class="item-pro flex flex-col h-full border border-[#CECECE] rounded-t-[5px] overflow-hidden">
+           <a href="#" class="img c-img bg-white pt-[116%] img-contain">
+             <img src="./theme/frontend/img/item-2.png" alt="">
+           </a>
+           <div class="pro-content p-4 text-center">
+             <h3>
+               <a href="#" class="title mb-4 font-bold text-white 2xl:text-[1.125rem] line-clamp-2">Kéo ngắn</a>
+             </h3>
+             <p class="price-old text-xs text-[#D1D1D1] line-through">200.000 VND</p>
+             <p class="price font-semibold text-white">100.000 VND</p>
+           </div>
+           <a href="#" title="Thêm vào giỏ hàng" class="btn-add-cart mt-auto hover:bg-cl-red hover:text-white py-[.375rem] px-[.625rem] flex items-center justify-center bg-[#D9001D] text-white">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 mr-2">
+               <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+             </svg>            
+             Thêm vào giỏ hàng
+           </a>
+         </div> 
+         </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-pro_cate bg-no-repeat bg-cover xl:pt-16 2xl:pb-40 xl:pb-20 " style="background-image: url(./theme/frontend/img/Background.jpg);">
+    <div class="container">
+      <h2 class="title_all font-bold mb-8 text-white text-center 2xl:text-[2.5rem] xl:text-[1.875rem] text-[1.5rem] 2xl:mb-16">
+        Danh mục các sản phẩm
+      </h2>
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+          <div class="item-pro_cate">
+            <a href="#" class="img c-img img__ pt-[66%] rounded overflow-hidden mb-4 ">
+              <img src="./theme/frontend/img/item-3.jpg" alt="">
+            </a>
+            <h3 class="py-2 px-12 text-center rounded-2xl bg-cl-red uppercase text-sm text-white w-fit mx-auto hover:bg-[#D9001D] hover:text-white">
+              <a href="#" class="line-clamp-1 hover:text-white">Kéo nhà bếp</a>
+            </h3>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+          <div class="item-pro_cate">
+            <a href="#" class="img c-img img__ pt-[66%] rounded overflow-hidden mb-4 ">
+              <img src="./theme/frontend/img/item-3.jpg" alt="">
+            </a>
+            <h3 class="py-2 px-12 text-center rounded-2xl bg-cl-red uppercase text-sm text-white w-fit mx-auto hover:bg-[#D9001D] hover:text-white">
+              <a href="#" class="line-clamp-1 hover:text-white">Kéo nhà bếp</a>
+            </h3>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+          <div class="item-pro_cate">
+            <a href="#" class="img c-img img__ pt-[66%] rounded overflow-hidden mb-4 ">
+              <img src="./theme/frontend/img/item-3.jpg" alt="">
+            </a>
+            <h3 class="py-2 px-12 text-center rounded-2xl bg-cl-red uppercase text-sm text-white w-fit mx-auto hover:bg-[#D9001D] hover:text-white">
+              <a href="#" class="line-clamp-1 hover:text-white">Kéo nhà bếp</a>
+            </h3>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+          <div class="item-pro_cate">
+            <a href="#" class="img c-img img__ pt-[66%] rounded overflow-hidden mb-4 ">
+              <img src="./theme/frontend/img/item-3.jpg" alt="">
+            </a>
+            <h3 class="py-2 px-12 text-center rounded-2xl bg-cl-red uppercase text-sm text-white w-fit mx-auto hover:bg-[#D9001D] hover:text-white">
+              <a href="#" class="line-clamp-1 hover:text-white">Kéo nhà bếp</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer xl:pt-[4.5rem] pt-8 bg-[#E8E8E8]">
+    <div class="container">
+      <div class="flex flex-wrap -mx-2">
+        <div class="lg:w-[22%] px-2 mb-4">
+          <p class="title-footer font-semibold uppercase text-[#454545] mb-8">
+            Chăm sóc khách hàng
+          </p>
+          <div class="menu-footer">
+            <ul>
+              <li><a href="#">Dịch vụ khách hàng</a></li>
+              <li><a href="#">Thông tin liên hệ</a></li>
+              <li><a href="#">Tin tức</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="lg:w-1/4 px-2 mb-4">
+          <p class="title-footer font-semibold uppercase text-[#454545] mb-8">
+            Chính sách
+          </p>
+          <div class="menu-footer">
+            <ul>
+              <li><a href="#">Chính sách vận chuyển</a></li>
+              <li><a href="#">Chính sách đối tác bảo hành</a></li>
+              <li><a href="#">Chính sách & Quy định chung</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:w-[28%] px-2 mb-4">
+          <p class="title-footer font-semibold uppercase text-[#454545] mb-8">
+            THỜI GIAN HOẠT ĐỘNG
+          </p>
+          <div class="menu-footer">
+            <ul>
+              <li>Mở cửa: Từ 6h - 23h từ Thứ 2 - Chủ nhật</li>
+              <li>Ngày Lễ làm việc bình thường, Tết nghỉ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:w-1/4 px-2 mb-4">
+          <p class="title-footer font-semibold uppercase text-[#454545] mb-8">
+            ĐỊA CHỈ CÔNG TY
+          </p>
+          <div class="menu-footer">
+            <ul>
+              <li>Địa chỉ: Số 25 Vũ Ngọc Phan, Láng Hạ, Đống Đa, Hà Nội </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="#" title="" class="logo-footer block max-w-[7.313rem] lg:ml-10">
+        <img src="./theme/frontend/img/LOGO-footer.png" alt="">
+      </a>
+      <div class="flex flex-wrap items-center justify-between">
+        <ul class="list-payment_method"></ul>31:20
+      </div>
+
+    </div>
+  </footer>
+  <script src="./theme/frontend/js/main.js"></script>
+  <script src="./theme/frontend/js/slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+</body>
+</html>
